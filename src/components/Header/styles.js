@@ -18,11 +18,14 @@ export const Header = styled.header`
   .header-navigation {
     display: flex;
     div {
+      padding: 8px;
       transition: 0.2s;
       font-weight: 600;
       margin-right: 16px;
       opacity: 0.8;
       &:hover {
+        background-color: rgba(255,255,255,.2);
+        border-radius: 5px;
         color: rgb(255, 255, 255);
         opacity: 1;
         cursor: pointer;
@@ -31,18 +34,19 @@ export const Header = styled.header`
         text-decoration: auto;
         color: white;
       }
-      .active {
-        background: rgb(45 66 161);
-        padding: 4px 12px;
-        border-radius: 5px;
-        border: 1px solid #2c324e;
-      }
     }
   }
   .header-social {
     display: flex;
+    align-items: center;
     div {
+      cursor: pointer;
       margin: 0 5px;
+      padding: 4px;
+      border-radius: 5px;
+      &:hover {
+        background: rgba(255,255,255,.2);
+      }
     }
   }
 `;

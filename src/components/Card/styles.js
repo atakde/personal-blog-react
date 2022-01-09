@@ -7,7 +7,6 @@ export const Card = styled.div`
   padding: 16px;
   border: 1px solid #2c324e;
   border-radius: 4px;
-  opacity: 0.8;
   flex-flow: wrap;
   img {
     width: 180px;

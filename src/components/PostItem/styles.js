@@ -24,4 +24,7 @@ export const PostItem = styled.div`
   &:hover {
     opacity: 1;
   }
+  h3, p, img {
+    cursor: pointer;
+  }
 `;
