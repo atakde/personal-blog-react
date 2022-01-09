@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import PostItem from "../PostItem";
 import { getPostsFromServer } from "../../api";
 import Loader from "react-loader-spinner";
+import * as S from "./styles";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 const PostList = () => {
   const [posts, setPosts] = useState([]);
@@ -29,7 +31,9 @@ const PostList = () => {
   return (
     <React.Fragment>
       {isLoading && (
-        <Loader type="BallTriangle" color="#00BFFF" height={80} width={80} />
+        <S.LoaderWrapper>
+          <Loader color="white" type="Triangle" />
+        </S.LoaderWrapper>
       )}
 
       {!isLoading &&
