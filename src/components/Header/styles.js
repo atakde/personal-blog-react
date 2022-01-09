@@ -24,7 +24,7 @@ export const Header = styled.header`
       margin-right: 16px;
       opacity: 0.8;
       &:hover {
-        background-color: rgba(255,255,255,.2);
+        background-color: rgba(255, 255, 255, 0.2);
         border-radius: 5px;
         color: rgb(255, 255, 255);
         opacity: 1;
@@ -45,8 +45,22 @@ export const Header = styled.header`
       padding: 4px;
       border-radius: 5px;
       &:hover {
-        background: rgba(255,255,255,.2);
+        background: rgba(255, 255, 255, 0.2);
       }
     }
+  }
+
+  .sticky-wrapper {
+    position: relative;
+  }
+
+  .sticky .sticky-inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: #0b174e;
+    padding: 10px 0;
   }
 `;
