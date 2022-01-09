@@ -15,7 +15,8 @@ const PostList = () => {
       result.map((each) => {
         postData.push({
           title: each.title,
-          imgUrl: "https://picsum.photos/700/400",
+          imgUrl:
+            "https://doodleipsum.com/700x400/flat?bg=7463D9&i=b2a7f828acad27e884b0aabcf6f10ab6",
           date: new Date().toLocaleDateString(),
           description: each.body,
           tags: ["test", "tag"],
